@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart - SPUDZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SPUDZ<span class="dot">🥔</span></div>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="index.html#shop">shop</a>
+            <a href="index.html#about">about</a>
+            <a href="cart.html">cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <h1>ur potato stash</h1>
+        <div class="cart-items">
+            <!-- cart items load here -->
+        </div>
+        <div class="cart-total">
+            <h3>total: <span>$0</span></h3>
+            <button class="checkout-btn" onclick="checkout()">checkout</button>
+        </div>
+        <p style="color: #444; font-size: 11px; margin-top: 20px;">* checkout isnt ready yet. email garry@potato.spud to arrange potato delivery</p>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">back to potatos</a>
+        </div>
+        <p class="copyright">© 2024 SPUDZ. made with potato energy.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

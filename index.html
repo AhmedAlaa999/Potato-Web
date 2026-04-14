@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPUDZ - premium potatos 4 premium ppl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header area -->
+    <header>
+        <div class="logo">SPUDZ<span class="dot">🥔</span></div>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#shop">shop</a>
+            <a href="#about">about</a>
+            <a href="cart.html">cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section id="home" class="hero">
+        <h1>eat potatos<br><span class="highlight">or die tryin</span></h1>
+        <p>not your grandma's potatos. these hit diffrent.</p>
+        <button onclick="scrollToShop()">browse spuds ↓</button>
+    </section>
+
+    <!-- featured stuff -->
+    <section class="featured">
+        <div class="marquee">
+            <span>GOLDEN POTATOES • ORGANIC(ISH) • NO POTATO LEFT BEHIND • </span>
+            <span>GOLDEN POTATOES • ORGANIC(ISH) • NO POTATO LEFT BEHIND • </span>
+        </div>
+    </section>
+
+    <!-- shop section -->
+    <section id="shop" class="products">
+        <h2>the spuds</h2>
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterProducts('all')">all</button>
+            <button class="filter-btn" onclick="filterProducts('russet')">russet</button>
+            <button class="filter-btn" onclick="filterProducts('gold')">golden</button>
+            <button class="filter-btn" onclick="filterProducts('fancy')">fancy</button>
+            <button class="filter-btn" onclick="filterProducts('acc')">accesories</button>
+        </div>
+        <div class="product-grid" id="product-grid">
+            <!-- products get loaded here by js -->
+        </div>
+    </section>
+
+    <!-- about section kinda -->
+    <section id="about" class="about">
+        <h2>why potatos</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>ok so basicly we got tired of eating sad grocery store potatos that taste like nothing. so we started digging for better ones.</p>
+                <p>these potatos are sourced from actaul farms (not that supermarket garbage). each one is hand picked by gary, our potato guy.</p>
+                <p>shiping takes 3-5 days. they might sprout a lil but thats how u know theyre alive. just cut the sprouts off idk.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="num">12,847</span>
+                    <span class="label">potatos sold</span>
+                </div>
+                <div class="stat">
+                    <span class="num">1</span>
+                    <span class="label">garry (our guy)</span>
+                </div>
+                <div class="stat">
+                    <span class="num">99%</span>
+                    <span class="label">potato</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="newsletter">
+        <h3>join the potato club</h3>
+        <p>get notified when new potatos drop. no spam (unless its in a can lol).</p>
+        <form onsubmit="subscribe(event)">
+            <input type="email" placeholder="ur email" id="email-input">
+            <button type="submit">join</button>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">potato instagram</a>
+            <a href="#">potato tiktok</a>
+            <a href="#">potato twitter</a>
+        </div>
+        <p class="copyright">© 2024 SPUDZ. made with potato energy.</p>
+        <p class="fine-print">actualy gary runs our socials but he keeps posting pictures of his cat. working on it.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
